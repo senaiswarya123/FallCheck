@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">FallCheck</string>
+    <string name="title_home">Home</string>
+    <string name="title_settings">Settings</string>
+    <string name="fall_check">FALL CHECK</string>
+    <string name="startFallCheck">START</string>
+    <string name="stopFallCheck">STOP</string>
+    <string name="fallCheckStartedMsg">Fall Check is Running</string>
+    <string name="FallOccured">Fall occured</string>
+    <string name="textPersonNameValue">911</string>
+    <string name="textPhoneNumberValue">911</string>
+    <string name="emergencyContactDetailsText">Emergency Contact Details</string>
+    <string name="updateButton">Update</string>
+    <string name="contact_name">Contact Name</string>
+    <string name="contact_phone_number">Contact Phone Number</string>
+    <string name="emergency_contact_updated">Emergency Contact Details Updated</string>
+</resources>

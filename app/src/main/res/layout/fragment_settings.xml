@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.settings.SettingsFragment">
+
+    <TextView
+        android:id="@+id/text_home3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:fadingEdge="horizontal"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/fall_check"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/design_default_color_primary_variant"
+        android:textColorHighlight="@color/design_default_color_primary_dark"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.069"
+        tools:text="FALL CHECK" />
+
+    <EditText
+        android:id="@+id/textPersonName"
+        android:layout_width="164dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="248dp"
+        android:layout_marginEnd="183dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/textPersonNameValue"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/textPhoneNumber"
+        android:layout_width="210dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="191dp"
+        android:layout_marginTop="248dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:minHeight="48dp"
+        android:text="@string/textPhoneNumberValue"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/emergencyPhoneContactText"
+        android:layout_width="302dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="176dp"
+        android:layout_marginEnd="55dp"
+        android:text="@string/emergencyContactDetailsText"
+        android:textColorHint="#FD0217"
+        android:textColorLink="#FF0202"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/updateContactButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="146dp"
+        android:layout_marginTop="348dp"
+        android:layout_marginEnd="172dp"
+        android:text="@string/updateButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textContactNameDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="220dp"
+        android:layout_marginEnd="252dp"
+        android:text="@string/contact_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textContactNumberDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="239dp"
+        android:layout_marginTop="220dp"
+        android:layout_marginEnd="26dp"
+        android:text="@string/contact_phone_number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/updateContactSuccessErrorMsg"
+        android:layout_width="315dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="424dp"
+        android:layout_marginEnd="53dp"
+        android:text="@string/emergency_contact_updated"
+        android:textAlignment="center"
+        android:textColorHighlight="#2E2D2D"
+        android:textColorLink="#002BF6"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
