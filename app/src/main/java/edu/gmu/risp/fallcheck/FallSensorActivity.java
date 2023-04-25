@@ -25,7 +25,7 @@ public class FallSensorActivity extends MainActivity implements SensorEventListe
     private float[] gravityVector = new float[3];
     private float[] linearAcceleration = new float[3];
 
-    private static final float accelThreshold = 10.0f; // Set the fall value after testing
+    private static final float accelThreshold = 15.0f; // Set the fall value after testing
 
     private Button fallCheckStop;
 
