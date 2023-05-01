@@ -1,5 +1,6 @@
 package edu.gmu.risp.fallcheck.ui.home;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -22,11 +23,8 @@ public class HomeFragment extends Fragment {
 
     private FragmentHomeBinding binding;
 
-
-    public View onCreateView(@NonNull LayoutInflater inflater,
-                             ViewGroup container, Bundle savedInstanceState) {
-        HomeViewModel homeViewModel =
-                new ViewModelProvider(this).get(HomeViewModel.class);
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        HomeViewModel homeViewModel = new ViewModelProvider(this).get(HomeViewModel.class);
 
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
@@ -35,7 +33,6 @@ public class HomeFragment extends Fragment {
         homeViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
 
         fallCheckStart = root.findViewById(R.id.FallCheckStartButton);
-
 
         // attach an OnClickListener
         fallCheckStart.setOnClickListener(v -> enableDisableFallCheck());
@@ -55,6 +52,5 @@ public class HomeFragment extends Fragment {
         intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
         intent.putExtra("keep", true);
         startActivity(intent);
-
     }
 }
